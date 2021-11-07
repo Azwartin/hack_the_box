@@ -26,3 +26,9 @@ print(serial - auth_serial)
 ```
 
 So, I got one - 71DF5A33EFFDEA5B1882C9FBDC1240C6, and it wasn't a flag. But there is a note: 'once you find it, "crack" it'. I used [Crackstation](https://crackstation.net/) (my thanks to them), successfuly crack this md5 hash and got the flag
+
+There is exists one more way to find the serail id, that we can use and the task name points to it - [usbrip](https://github.com/snovvcrash/usbrip)
+```
+usbrip events violations auth.json -f syslog
+```
+but it's a much slower for me.
